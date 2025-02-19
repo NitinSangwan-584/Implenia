@@ -1,0 +1,78 @@
+:root {
+    --font-family-primary: "Source Sans 3", serif;
+    --text-sm: 14px;
+    --text-md: 18px;
+    --text-lg: 64px;
+    --text-xl: 88px;
+    --color-white: white;
+    --color-black: #000000;
+    --color-yellow: #EBA82C;
+    --color-grey: #B0B1B7;
+    --color-grey-3: #E7E6EB;
+    --color-black-1: #1D252D;
+    --color-black-2: #141414;
+}
+
+.font-family-primary {
+    font-family: var(--font-family-primary);
+}
+
+.text-sm {
+    font-size: var(--text-sm);
+}
+
+.text-md {
+    font-size: var(--text-md);
+}
+
+.text-lg {
+    font-size: var(--text-lg);
+}
+
+.text-xl {
+    font-size: var(--text-xl);
+}
+
+.color-white {
+    color: var(--color-white);
+}
+
+.color-black {
+    color: var(--color-black);
+}
+
+.color-yellow {
+    color: var(--color-yellow);
+}
+
+.color-grey {
+    color: var(--color-grey);
+}
+
+.color-grey-3 {
+    color: var(--color-grey-3);
+}
+
+.bg-white {
+    background-color: var(--color-white);
+}
+
+.color-black-1 {
+    color: var(--color-black-1);
+}
+
+.color-black-2 {
+    background: var(--color-black-2);
+}
+
+@media (max-width:991.98px) {
+    :root {
+        --text-xl: 64px;
+    }
+}
+
+@media (max-width:575.98px) {
+    :root {
+        --text-xl: 48px;
+    }
+}
