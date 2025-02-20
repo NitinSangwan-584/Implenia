@@ -11,7 +11,7 @@
 }
 
 .nav-shadow {
-    box-shadow: 0px 4px 8px 0px #00000040;
+    box-shadow: 0px 4px 8px 0px var(--text-shadow) !important;
 }
 
 .lh-20 {
@@ -68,7 +68,7 @@
 }
 
 .content {
-    box-shadow: 0px 4px 4px 0px #00000040;
+    text-shadow: 0px 4px 4px 0px var(--text-shadow) !important;
 }
 
 .boxly {
@@ -87,7 +87,7 @@
 .btn:hover {
     background: rgba(255, 255, 255, 0.4);
     color: var(--color-black) !important;
-    border: 2px solid rgba(255, 255, 255, 0.9);
+    border: 2px solid var(--color-white);
     transform: scale(1.05);
 }
 

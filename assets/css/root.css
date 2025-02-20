@@ -5,6 +5,7 @@
     --color-white: white;
     --color-black: #000000;
     --color-yellow: #EBA82C;
+    --text-shadow:#00000040;
 }
 
 .font-family-primary {
@@ -25,6 +26,9 @@
 
 .color-yellow {
     color: var(--color-yellow);
+}
+.text-shadow{
+    color: var(--text-shadow);
 }
 
 @media (max-width:991.98px) {
