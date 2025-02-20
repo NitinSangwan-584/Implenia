@@ -1,11 +1,15 @@
 :root {
     --font-family-primary: "Source Sans 3", serif;
     --text-md: 21px;
+    --text-lg: 49px;
     --text-xl: 80px;
     --color-white: white;
     --color-black: #000000;
+    --color-black-2: #1D1D1B;
+    --color-red:#FF132D;
     --color-yellow: #EBA82C;
-    --shadow:#00000040;
+    --color-yellow-2: #FEBE32;
+    --shadow: #00000040;
 }
 
 .font-family-primary {
@@ -16,6 +20,10 @@
     font-size: var(--text-md);
 }
 
+.text-lg {
+    font-size: var(--text-lg);
+}
+
 .text-xl {
     font-size: var(--text-xl);
 }
@@ -24,10 +32,21 @@
     color: var(--color-black);
 }
 
+.color-black-2 {
+    color: var(--color-black-2);
+}
+
+.color-red {
+    color: var(--color-red);
+}
 .color-yellow {
     color: var(--color-yellow);
 }
-.shadow{
+.color-yellow-2 {
+    color: var(--color-yellow-2);
+}
+
+.shadow {
     color: var(--shadow);
 }
 
