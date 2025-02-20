@@ -2,13 +2,16 @@
 @import url(./root.css);
 
 
-.max-w-1440 {
-    max-width: 1440px !important;
+.max-w-1177 {
+    max-width: 1177px !important;
+}
+
+.max-w-1138 {
+    max-width: 1138px !important;
 }
 
 .nav-shadow {
     box-shadow: 0px 4px 8px 0px #00000040;
-
 }
 
 .lh-20 {
@@ -17,6 +20,10 @@
 
 .lh-21 {
     line-height: 21px;
+}
+
+.lh-80 {
+    line-height: 80px;
 }
 
 .gap-38 {
@@ -33,7 +40,11 @@
 }
 
 .mt-25 {
-    margin-top: 24px;
+    margin-top: 25px;
+}
+
+.page-logo {
+    width: 100%;
 }
 
 .bg-img {
@@ -56,17 +67,14 @@
     cursor: pointer;
 }
 
-.max-w-562 {
-    max-width: 562px;
-}
-
 .content {
     /* box-shadow: 0px 4px 4px 0px #00000040; */
 }
 
 .boxly {
-    top: 28%;
+    bottom: 0;
     left: 0%;
+    pointer-events: none;
 }
 
 .btn {
@@ -78,9 +86,12 @@
 
 .btn:hover {
     background-color: var(--color-white);
-    color: var(--color-black) !important;
+    color: var(--color-yellow) !important;
 }
 
+/* .max-w-562 {
+    max-width: 562px;
+} */
 
 .menu-lines {
     width: 30px;
@@ -127,10 +138,17 @@
         right: 0 !important;
     }
 
+    .lh-80 {
+        line-height: 70px;
+    }
+
     .max-w-562 {
         max-width: 550px;
     }
 
+    .page-logo {
+        width: 80%;
+    }
 }
 
 @media (max-width:767.98px) {
@@ -138,11 +156,17 @@
         max-width: 520px;
     }
 
+    .lh-80 {
+        line-height: 50px;
+    }
+
+    .page-logo {
+        width: 70%;
+    }
 }
 
 .boxly {
-    max-width: 100%;
-    /* Ensures it doesn’t overflow */
+    /* width: 100%; */
 }
 
 @media (max-width: 768px) {
@@ -153,15 +177,5 @@
         /* Adjust size */
         right: 10px;
         /* Adjust position */
-    }
-}
-
-@media (min-width: 992px) {
-
-    /* Large screens */
-    .boxly {
-        width: 300px;
-        /* Increase size */
-        right: 50px;
     }
 }
