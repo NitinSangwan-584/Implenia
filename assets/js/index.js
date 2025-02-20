@@ -6,6 +6,6 @@ const navbarbtn = () => {
     document.body.classList.toggle("overflow-hidden")
 }
 document.getElementById('video-thumbnail').addEventListener('click', function () {
-    this.style.display = 'none';
-    document.getElementById('video-frame').style.display = 'block';
+    this.classList.add('d-none'); // Hide the thumbnail
+    document.getElementById('video-frame').classList.remove('d-none'); // Show the video
 });
