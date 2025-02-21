@@ -22,7 +22,7 @@
     width: 48px;
 }
 
-.mx-w-795 {
+.max-w-795 {
     max-width: 795px;
 }
 
@@ -163,6 +163,10 @@
     margin-bottom: 64px;
 }
 
+.mb-25 {
+    margin-bottom: 25px;
+}
+
 .page-logo {
     width: 100%;
 }
@@ -222,7 +226,7 @@
 .btn:hover {
     background: rgba(255, 255, 255, 0.4);
     color: var(--color-black) !important;
-    border: 2px solid var(--color-red) !important;
+    border: 2px solid var(--color-white) !important;
     transform: scale(1.05);
 }
 
@@ -243,8 +247,7 @@
 
 .btn-2:hover {
     color: var(--color-white) !important;
-    border: 2px solid var(--color-black-2) !important;
-    transform: scale(1.05);
+    border: 2px solid var(--color-light-white) !important;
     background: var(--color-red) !important;
 }
 
@@ -284,74 +287,36 @@
     padding: 32px 20px 19px 26px;
 }
 
-/* -------red-btn------ */
-.section-4-start-btn {
-    width: 268px;
-    height: 56px;
-    border: 2px solid var(--color-red);
-    border-radius: 47px;
-    background-color: var(--color-white);
-    color: var(--color-red);
-    opacity: 0;
-    pointer-events: none;
-    transition: all 200ms linear;
+.red-card:hover {
+    border: 1px solid var(--color-red);
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
 }
 
-.kick-card:hover .section-4-start-btn {
-    opacity: 100%;
-    pointer-events: visible;
+.blue-card:hover {
+    border: 1px solid var(--color-blue);
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
 }
 
-.section-4-start-btn:hover {
-    background-color: var(--color-red);
-    color: var(--color-white);
+.yellow-card:hover {
+    border: 1px solid var(--color-yellow-2);
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
 }
 
-/* -------blue-btn------ */
-.section-4-start-blue-btn {
-    width: 268px;
-    height: 56px;
-    border: 2px solid var(--color-blue);
-    border-radius: 47px;
-    background-color: var(--color-white);
-    color: var(--color-blue);
-    opacity: 0;
-    pointer-events: none;
-    transition: all 200ms linear;
+.red-card:hover~.rbg-btn:hover {
+    background: var(--color-white) !important;
+    color: var(--color-red) !important;
+    border: 2px solid var(--color-red) !important;
 }
 
-.section-4-start-blue-btn:hover {
-    background-color: var(--color-blue);
-    color: var(--color-white);
+.blue-card:hover~.rbg-btn:hover {
+    background: var(--color-blue) !important;
 }
 
-
-.kick-card:hover .section-4-start-blue-btn {
-    opacity: 100%;
-    pointer-events: visible;
-}
-
-/* -------yellow-btn------ */
-.section-4-start-yellow-btn {
-    width: 268px;
-    height: 56px;
-    border: 2px solid var(--color-yellow-2);
-    border-radius: 47px;
-    background-color: var(--color-white);
-    color: var(--color-yellow-2);
-    opacity: 0;
-    pointer-events: none;
-    transition: all 200ms linear;
-}
-
-.section-4-start-yellow-btn:hover {
-    background-color: var(--color-yellow-2);
-    color: var(--color-white);
-}
-
-.kick-card:hover .section-4-start-yellow-btn {
-    opacity: 100%;
-    pointer-events: visible;
+.yellow-card:hover~.rbg-btn:hover {
+    background: var(--color-yellow-2) !important;
 }
 
 .mt-48 {
@@ -360,6 +325,14 @@
 
 .mt-39 {
     margin-top: 39px;
+}
+
+.slider-btn {
+    padding: 19px 45px;
+    border-radius: 47px;
+    border: 2px solid var(--color-red);
+    transition: all 0.3s ease-in-out;
+    white-space: nowrap;
 }
 
 .arrow {
@@ -376,19 +349,9 @@
 .box-2 {
     width: 323px;
     border-radius: 28px;
-    border: 1px solid #000000;
+    border: 1px solid var(--color-black);
     transition: all 300ms linear;
 }
-
-.box-2:hover {
-    transform: scale(1.06);
-}
-
-.images {
-    height: 208px;
-}
-
-
 
 .blue-box {
     width: 104px;
@@ -396,6 +359,26 @@
     border-radius: 13.5px;
     top: 18px;
     left: 16px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.box-2:hover .blue-box {
+    opacity: 1;
+}
+
+.card-1:hover {
+    transform: scale(1.06);
+    border: 1px solid var(--color-blue);
+}
+
+.card-2:hover {
+    transform: scale(1.06);
+    border: 1px solid var(--color-yellow-2);
+}
+
+.images {
+    height: 208px;
 }
 
 /* faq */
@@ -446,7 +429,75 @@
     margin-top: 0px;
 }
 
+/* footer */
+.fs-10 {
+    font-size: 10px;
+}
 
+.fs-14 {
+    font-size: 14px;
+}
+
+.lh-12 {
+    line-height: 12.57px;
+}
+
+.mt-44 {
+    margin-top: 44px;
+}
+
+.fw-900 {
+    font-weight: 900;
+}
+
+.pt-138 {
+    padding-top: 138px;
+}
+
+.pb-65 {
+    padding-bottom: 65px;
+}
+
+.email-input {
+    max-width: 273px;
+    height: 50px;
+    padding-left: 19px;
+    padding-right: 19px;
+}
+
+.email-input:focus,
+.footer-about:focus {
+    border: 2px solid var(--color-red) !important;
+    outline: none;
+}
+
+.footer-about {
+    padding-bottom: 87px;
+    padding-left: 19px;
+    padding-top: 18px;
+    max-width: 273px;
+}
+
+.footer-btn {
+    width: 96px;
+    height: 34px;
+    transition: all 300ms linear;
+}
+
+.footer-btn:hover {
+    background-color: var(--color-white) !important;
+    color: var(--color-black) !important;
+}
+
+.footer-link {
+    transition: all 300ms linear;
+}
+
+.footer-link:hover {
+    color: var(--color-red) !important;
+}
+
+/* nav */
 .main-heading-box {
     transition: all 200ms linear;
 }
@@ -541,6 +592,22 @@
         line-height: 50px;
     }
 
+    .mb-146 {
+        margin-bottom: 46px;
+    }
+
+    .mt-128 {
+        margin-top: 28px;
+    }
+
+    .pb-65 {
+        padding-bottom: 5px;
+    }
+
+    .pt-138 {
+        padding-top: 38px;
+    }
+
     .mb-64 {
         margin-bottom: 20px;
     }
@@ -554,7 +621,7 @@
     }
 
     .mb-114 {
-        margin-bottom: 50px;
+        margin-bottom: 40px;
     }
 
     .mb-130 {
@@ -576,12 +643,18 @@
     }
 
     .lh-40 {
-        line-height: 30px;
+        line-height: 32px;
     }
 
     .backdrop {
         padding: 10px;
         backdrop-filter: blur(3px) !important;
+    }
+
+    .slider-btn {
+        width: 100%;
+        padding: 10px 12px;
+        /* font-size: var(--text-sm); */
     }
 
     .gap-74 {

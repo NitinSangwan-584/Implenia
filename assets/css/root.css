@@ -80,7 +80,9 @@
 .bg-light-white {
     background: var(--bg-light-white);
 }
-
+.bg-red{
+    background: var(--color-red);
+}
 .shadow {
     color: var(--shadow);
 }
@@ -94,6 +96,7 @@
 @media (max-width:575.98px) {
     :root {
         --text-xl: 48px;
+        --text-md: 30px;
         --text-lg: 32px;
         --text-base: 32px;
     }

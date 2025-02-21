@@ -23,3 +23,28 @@ $('.my-slider').slick({
         },
     ]
 });
+document.querySelectorAll('.red-card, .blue-card, .yellow-card').forEach(card => {
+    card.addEventListener('mouseover', () => {
+        let btn = document.querySelector('.rbg-btn');
+        if (card.classList.contains('red-card')) {
+            btn.style.background = 'var(--color-white)';
+            btn.style.color = 'var(--color-red)';
+            btn.style.border = '2px solid var(--color-red)';
+        } else if (card.classList.contains('blue-card')) {
+            btn.style.background = 'var(--color-white)';
+            btn.style.color = 'var(--color-blue)';
+            btn.style.border = '2px solid var(--color-blue)';
+        } else if (card.classList.contains('yellow-card')) {
+            btn.style.background = 'var(--color-white)';
+            btn.style.color = 'var(--color-yellow-2)';
+            btn.style.border = '2px solid var(--color-yellow-2)';
+        }
+    });
+
+    card.addEventListener('mouseout', () => {
+        let btn = document.querySelector('.rbg-btn');
+        btn.style.background = ''; // Reset to default
+        btn.style.color = '';
+        btn.style.border = '';
+    });
+});
