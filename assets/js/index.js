@@ -5,7 +5,21 @@ const navbarbtn = () => {
     document.getElementById("rotates2").classList.toggle("rotate-45")
     document.body.classList.toggle("overflow-hidden")
 }
-// document.getElementById('video-thumbnail').addEventListener('click', function () {
-//     this.classList.add('d-none'); // Hide the thumbnail
-//     document.getElementById('video-frame').classList.remove('d-none'); // Show the video
-// });
+$('.my-slider').slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    prevArrow: ".previous",
+    nextArrow: ".next",
+    responsive: [
+        {
+            breakpoint: 992,
+            settings: {
+                autoplay: true,
+                autoplaySpeed: 2000,
+            }
+        },
+    ]
+});
