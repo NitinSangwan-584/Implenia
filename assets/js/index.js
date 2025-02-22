@@ -48,3 +48,23 @@ document.querySelectorAll('.red-card, .blue-card, .yellow-card').forEach(card =>
         btn.style.border = '';
     });
 });
+
+const mybutton = document.getElementById("myBtn");
+window.onscroll = function () {
+    scrollFunction();
+};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block"; // Show the button
+    } else {
+        mybutton.style.display = "none";
+    }
+}
+
+function topFunction() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
