@@ -21,7 +21,7 @@
 <body>
     <!-- header -->
     <header class="min-vh-100 bg-img  d-flex flex-column justify-content-center">
-        <nav class="py-16 w-100 bg-white nav-shadow mx-auto ">
+        <nav class="py-16 w-100 bg-white nav-shadow mx-auto position-fixed top-0 z-3">
             <div class="container max-w-1177">
                 <div class="d-flex align-items-center justify-content-between w-100">
                     <a href="https://implenia.com/en/" target="_blank"><img src="./assets/img/svg/page-logo.svg"
@@ -95,8 +95,7 @@
                     <p class="font-family-primary color-black fw-bold text-sm lh-21 mb-0">Community Members</p>
                 </div>
                 <div class="col-lg-3 col-sm-12 col-md-12 mb-4 d-flex justify-content-center align-items-center mx-auto">
-                    <button class="font-family-primary  fw-bold text-sm lh-21 btn-2 bg-white color-red"
-                        type="button">
+                    <button class="font-family-primary  fw-bold text-sm lh-21 btn-2 bg-white color-red" type="button">
                         Submit your idea!
                         </buttons>
                 </div>
@@ -313,11 +312,13 @@
                     </div>
                 </div>
             </div>
-            <button
-                class="font-family-primary mb-114 position-relative z-2  fw-bold text-sm lh-21 btn-2 color-red bg-white"
-                type="button">Bring
-                your idea
-                to life!</button>
+            <div class="d-flex justify-content-center align-items-center">
+                <button
+                    class="font-family-primary mb-114 position-relative z-2  fw-bold text-sm lh-21 btn-2 color-red bg-white"
+                    type="button">Bring
+                    your idea
+                    to life!</button>
+            </div>
         </div>
     </section>
     <!-- faq -->
