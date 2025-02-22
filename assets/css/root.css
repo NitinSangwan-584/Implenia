@@ -97,7 +97,7 @@
     :root {
         --text-xl: 48px;
         --text-md: 30px;
-        --text-lg: 32px;
-        --text-base: 32px;
+        --text-lg: 28px;
+        --text-base: 21px;
     }
 }

@@ -227,7 +227,6 @@
     background: rgba(255, 255, 255, 0.4);
     color: var(--color-black) !important;
     border: 2px solid var(--color-white) !important;
-    transform: scale(1.05);
 }
 
 /* section */
@@ -247,7 +246,6 @@
 
 .btn-2:hover {
     color: var(--color-white) !important;
-    border: 2px solid var(--color-light-white) !important;
     background: var(--color-red) !important;
 }
 
@@ -599,7 +597,9 @@
     .mt-128 {
         margin-top: 28px;
     }
-
+    .lh-61 {
+        line-height: 40px;
+    }
     .pb-65 {
         padding-bottom: 5px;
     }
@@ -625,7 +625,7 @@
     }
 
     .mb-130 {
-        margin-bottom: 130px;
+        margin-bottom: 30px;
     }
 
     .gap-74 {
@@ -643,7 +643,11 @@
     }
 
     .lh-40 {
-        line-height: 32px;
+        line-height: 25px;
+    }
+
+    .mt-57 {
+        margin-top: 20px;
     }
 
     .backdrop {
@@ -654,10 +658,8 @@
     .slider-btn {
         width: 100%;
         padding: 10px 12px;
-        /* font-size: var(--text-sm); */
     }
 
     .gap-74 {
         gap: 40px;
-    }
-}
+    }
